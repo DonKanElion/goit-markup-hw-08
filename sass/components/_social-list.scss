@@ -1,0 +1,36 @@
+.social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-list-item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+  
+    fill: var(--fill-icon);
+    border-radius: 50%;
+  
+    transition: background-color 250ms var(--trans-prop) 0ms,
+      fill 250ms var(--trans-prop) 0ms;
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primery-white-color);
+      }
+  }
+
+  .social-list-icon {
+    width: 20px;
+    height: 20px;
+  }
