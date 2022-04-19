@@ -35,13 +35,13 @@ img {
 }
 
 .link {
-  color: var(--title-text-color);
   text-decoration: none;
-  transition: color 250ms var(--trans-prop) 0ms;    
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+  // transition: color 250ms var(--trans-prop) 0ms;    
+  // &:hover,
+  // &:focus {
+  //   color: var(--accent-color);
+  // }
+  // color: var(--title-text-color);
 }
 
 body {

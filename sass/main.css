@@ -12,57 +12,6 @@
   --trans-prop: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-a,
-ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-body {
-  color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -72,7 +21,8 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -86,5 +36,9 @@ body {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero {
+  width: 480px;
 }
 /*# sourceMappingURL=main.css.map */
