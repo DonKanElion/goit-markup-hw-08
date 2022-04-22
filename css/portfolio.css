@@ -7,9 +7,10 @@
   --bgc-grey: rgba(245, 244, 250, 1);
   --fill-icon: rgba(175, 177, 184, 0.8);
   --form-labal-color: #757575;
+  --trans-prop: cubic-bezier(0.4, 0, 0.2, 1);
   --mr: 30px;
   --mb: 30px;
-  --trans-prop: cubic-bezier(0.4, 0, 0.2, 1);
+  --padd-section: 60px 0;
 }
 
 .visually-hidden {

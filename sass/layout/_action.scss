@@ -1,11 +1,13 @@
 .action{
-    padding: 60px 0;
+    padding: var(--padd-section);
     &__list{
-
     }
     
     &__item {
     margin-bottom: 30px;
+    & .title{
+    margin: 30px 0 10px;
+    }
     }
     
     &__icon{
@@ -19,15 +21,6 @@
     
     border-radius: 4px;
     background-color: rgba(245, 244, 250, 1);
-    }
-    
-    &__title{
-        color: var(--title-text-color);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        text-align: center;
     }
     
     &__text{

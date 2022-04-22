@@ -1,6 +1,5 @@
 .team{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: var(--padd-section);
     background-color: var(--bgc-grey);
 
     &__list{
