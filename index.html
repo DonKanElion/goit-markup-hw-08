@@ -22,56 +22,68 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">        
-       <a class="logo" href="./index.html">Web<span class="logo-header">Studio</span></a>
-       <button type="button" class="button__menu"><svg class="menu__icon" width="40" height="40" >
-        <use href="./images/icon-menu.svg"></use></button>
-       </svg>
+    <header class="page-header">
+      <div class="container">   
+
+       <div class="page-header__wrapper">
+        <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+
+        <button type="button" class="button__menu">
+          <!-- <img src="./images/icon-menu-off.svg" alt="" width="40" height="40"> -->
+          <img src="./images/icon-menu-onn.svg" alt="" width="40" height="40">
+       </button>
+       </div>
+       
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__titlee">Ефективне рішення для вашого бізнеса</h1>
-          <button class="" type="button">Замовити послугу</button>
+          <h1 class="hero__title">Ефективне рішення для вашого бізнеса</h1>
+          <button class="button" type="button">Замовити послугу</button>
         </div>
       </section>
 
       <section class="action">
         <div class="container">
-          <h2 class="section-title">Принципи роботи</h2>
+          <h2 class="visually-hidden">Принципи роботи</h2>
           <ul class="action__list">
-            <li class="action__item list"><svg class="action__icon">
+
+            <li class="action__item list">
+              <svg class="action__icon" width="70" height="70">
               <use href="./images/sprite.svg#sputnik"></use>              
             </svg><h3 class="action__title">Внимание к деталям</h3>
             <p class="action__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-            <li class="action__item list"><svg class="action__icon">
+
+            <li class="action__item list"><svg class="action__icon" width="70" height="70">
               <use href="./images/sprite.svg#clock"></use>              
             </svg><h3 class="action__title">Пунктуальность</h3>
             <p class="action__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-            <li class="action__item list"><svg class="action__icon">
-              <use href="./images/sprite.svg#comp"></use>              
+            <li class="action__item list"><svg class="action__icon" width="70" height="70">
+              <use href="./images/sprite.svg#comp" </use>              
             </svg><h3 class="action__title">Планирование</h3>
             <p class="action__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
             <li class="action__item list"><svg class="action__icon">
               <use href="./images/sprite.svg#astronaut"></use>            
             </svg><h3 class="action__title">Современные технологии</h3>
-            <p class="action__text">Современные технологии</p></li>
+            <p class="action__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
           </ul>
         </div>
       </section>
 
       <section class="team">
         <div class="container">
+
           <h2 class="section-title">
             Наша команда
           </h2>
           <ul class="team__list">
-            <li class="team__item"><img src="./images/member-igor.jpeg" alt="" width="270"  height="260">
-            <h3 class="team__name">Ігор Дем'яненко</h3>
+            <li class="team__item"><img src="./images/member-igor.jpeg" alt="" width="450"  height="460">
+            <div class="team__box">
+              <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__skills">Product Designer</p>
+            
           <ul class="social-list">
             <li class="social-list__item">
               <a href="" class="social-list__link">
@@ -101,9 +113,12 @@
                 </svg>
               </a>
             </li>
-          </ul></li>            
-            <li class="team__item"><img src="./images/member-olha.jpeg" alt="" width="270"  height="260">
-            <h3 class="team__name">Ольога Репіна</h3>
+          </ul>
+            </div>
+            </li>            
+            <li class="team__item"><img src="./images/member-olha.jpeg" alt="" width="450"  height="460">
+            <div class="team__box">
+              <h3 class="team__name">Ольога Репіна</h3>
             <p class="team__skills">Frontend Developer</p>
             <ul class="social-list">
               <li class="social-list__item">
@@ -134,9 +149,11 @@
                   </svg>
                 </a>
               </li>
-            </ul></li>
-            <li class="team__item"><img src="./images/member-Nicolay.jpeg" alt="" width="270"  height="260">
-            <h3 class="team__name">Микола Тарасов</h3>
+            </ul>
+            </div></li>
+            <li class="team__item"><img src="./images/member-Nicolay.jpeg" alt="" width="450"  height="460">
+            <div class="team__box">
+              <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__skills">Frontend Developer</p>
             <ul class="social-list">
               <li class="social-list__item">
@@ -167,9 +184,11 @@
                   </svg>
                 </a>
               </li>
-            </ul></li>
-            <li class="team__item"><img src="./images/member-michael.jpeg" alt="" width="270"  height="260">
-            <h3 class="team__name">Михайло Єрмаков</h3>
+            </ul>
+            </div></li>
+            <li class="team__item"><img src="./images/member-michael.jpeg" alt="" width="450"  height="460">
+            <div class="team__box">
+              <h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__skills">Frontend Developer</p>
             <ul class="social-list">
               <li class="social-list__item">
@@ -200,13 +219,14 @@
                   </svg>
                 </a>
               </li>
-            </ul></li>
+            </ul>
+            </div></li>
           </ul>
         </div>
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="secton-title">
+          <h2 class="section-title">
             Постійні клієнти
           </h2>
           <ul class="clients__list">

@@ -1,0 +1,15 @@
+.page-header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+        &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+}
+
+.button__menu{
+    background-color: var(--primery-white-color);
+    border: none;
+}

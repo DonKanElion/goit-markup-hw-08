@@ -2,6 +2,15 @@
 @import './base/common';
 @import './utils/visually-hidden';
 
-@import './layout/header';
+@import './layout/page-header';
 @import './base/container';
+@import './components/logo';
+
 @import './layout/hero';
+@import './components/button';
+@import './layout/action';
+
+@import './layout/team';
+@import './components/social-list';
+
+@import './layout/clients';
