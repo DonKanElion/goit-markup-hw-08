@@ -4,10 +4,17 @@
 
 @import './layout/page-header';
 @import './base/container';
+@import './components/section-tiltle';
+@import './components/title';
 @import './components/logo';
 
 @import './layout/hero';
 @import './components/button';
+@import './components/backdrop';
+@import './components/hero__modal';
+@import './components/form';
+@import './components/button-close';
+
 @import './layout/action';
 
 @import './layout/team';

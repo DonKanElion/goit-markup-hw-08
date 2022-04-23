@@ -1,0 +1,93 @@
+.form{
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.01em;
+    color: var(--secondy-text-color);
+
+    &__title{
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: var(--title-text-color);
+    }
+    &__label{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    &__wrapper{
+        position: relative;
+        display: block;
+    }
+
+    &__input{
+        display: block;
+        width: 100%;
+        padding: 12px 12px 12px 43px;
+        font: inherit;
+
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        transition: border 250ms var(--trans-prop);
+        
+        &:hover, &:focus{
+        border-color: var(--accent-color);
+        } 
+    }
+
+    &__contact-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: var(--title-text-color);
+  
+    transition: fill 250ms var(--trans-prop);
+
+    .form__input:hover + &,
+    .form__input:focus + &{
+      fill: var(--accent-color);
+        }
+    }
+
+    &__label-textarea{
+        display: block;
+        margin-bottom: 20px;
+        }
+    &__textarea{
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        font: inherit;
+        resize: none;
+        transition: border 250ms var(--trans-prop);
+        
+        &::placeholder {
+             color: rgba(117, 117, 117, 0.5);
+          }
+
+          &:focus,
+          &:hover {
+            border: 1px solid var(--accent-color);
+          }
+    }
+
+}
