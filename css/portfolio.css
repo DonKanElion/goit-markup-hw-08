@@ -132,7 +132,6 @@ body {
 
 .mobile-menu {
   position: absolute;
-  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -300,6 +299,26 @@ body {
   }
 }
 
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  overflow: auto;
+  transition: opacity 250ms var(--trans-prop), backround 250ms var(--trans-prop);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .contact-list {
   font-style: normal;
 }
@@ -452,6 +471,47 @@ body {
 
 .form__textarea:focus, .form__textarea:hover {
   border: 1px solid var(--accent-color);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.form-labal-checkbox {
+  display: flex;
+  align-items: center;
+  color: var(--form-labal-color);
+}
+
+.form-labal-checkbox::before {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  background-position: center;
+  background-origin: padding-box;
+  cursor: pointer;
+  transition: background 250ms var(--trans-prop);
+}
+
+.accent-policy:checked + .form-labal-checkbox::before {
+  background-image: url(../images/icon-check.svg);
+  border: 1px solid transparent;
+}
+
+.accent-policy:focus + .form-labal-checkbox::before {
+  outline: 1px solid var(--accent-color);
+}
+
+.conditions {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .button-close {

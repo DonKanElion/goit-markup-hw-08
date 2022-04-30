@@ -44,7 +44,7 @@
           </ul>
          </div> -->
 
-        <button type="button" class="mobile-menu-btn" data-menu-open >
+        <button type="button" class="mobile-menu-btn" data-menu-open data-modal-open>
           <svg class="burger-menu-icon" width="40" height="40"> 
             <use href="./images/sprite.svg#burger-menu-icon"></use>
           </svg>
@@ -52,41 +52,44 @@
             
       </div>
 
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn" data-menu-close>
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-              <use href="./images/sprite.svg#close"></use>
-            </svg>
-          </button>
-  
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item current"><a href="./index.html" class="mobile-nav__link link current">Студія</a></li>
-            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a></li>
-            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакти</a></li>
-          </ul>
-  
-          <div class="mobile-contact">
-
-            <ul class="mobile-contact__list">
-              <li class="mobile-contact__item"><a class="mobile-contact__link-current link" href="tel:+380961111111"
-                >+38 096 111 11 11</a></li>
-                <li class="contact-list__item"><a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a></li>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close data-modal-close >
+              <svg class="mobile-menu__close-icon" width="40" height="40">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+    
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item current"><a href="./index.html" class="mobile-nav__link link current">Студія</a></li>
+              <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a></li>
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакти</a></li>
             </ul>
-           </div>
-
-           <div class="mobail-social">
-             <ul class="mobail-social__list">
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Instagram</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Twitter</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Facebook</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">LinkedIn</a></li>
-             </ul>
-           </div>
+    
+            <div class="mobile-contact">
   
+              <ul class="mobile-contact__list">
+                <li class="mobile-contact__item"><a class="mobile-contact__link-current link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a></li>
+                  <li class="contact-list__item"><a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a></li>
+              </ul>
+             </div>
+  
+             <div class="mobail-social">
+               <ul class="mobail-social__list">
+                 <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Instagram</a></li>
+                 <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Twitter</a></li>
+                 <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Facebook</a></li>
+                 <li class="mobail-social__item"><a href="#" class="mobail-social__link link">LinkedIn</a></li>
+               </ul>
+             </div>
+    
+          </div>
         </div>
       </div>
+      
     </header>
 
     <main>
@@ -176,6 +179,23 @@
                   >
                   </textarea>
                 </label>
+
+                <div class="form-checkbox">
+                  <input
+                    class="accent-policy visually-hidden"
+                    type="checkbox"
+                    name="conditions"
+                    value=" "
+                    required
+                    id="policy-checkbox"
+                  />
+
+                  <label class="form-labal-checkbox" for="policy-checkbox"
+                    >Соглашаюсь с рассылкой и принимаю&nbsp;
+                  </label>
+                  <a class="conditions" href="#">Условия договора</a>
+                </div>
+                <button class="button" type="submit">Отправить</button>
 
               </form>            
           
