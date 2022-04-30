@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,76 +22,122 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container main-nav">
-        <a class="link logo-link" href="./index.html"
-          >Web<span class="logo">Studio</span></a
-        >
-        <nav class="site-nav">
-          <ul class="list menu">
-            <li class="item">
-              <a class="link-nav link" href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="main-nav">
+          <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="./index.html" class="main-nav__link link current">Студія</a>
             </li>
-            <li class="item">
-              <a class="link-nav link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="main-nav__item">
+              <a href="./portfolio.html" class="main-nav__link link">Портфоліо</a>
             </li>
-            <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="list contact">
-          <li class="item">
-            <a
-              class="link-nav link secondy-text"
-              href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="link-nav link secondy-text" href="tel:+380961111111"
-              ><svg class="contact-icon" width="10" height="16">
-                <use href="./images/sprite.svg#phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <!-- <div class="contact-header">
+          <ul class="contact-list">
+            <li class="contact-list__item"><a class="link contact-list__item-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a></li>
+            <li class="contact-list__item"><a class="link contact-list__item-link contact-list__current" href="tel:+380961111111"
+              >+38 096 111 11 11</a></li>
+          </ul>
+         </div> -->
+
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="burger-menu-icon" width="40" height="40">
+            <use href="./images/sprite.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link link">Студія</a>
+            </li>
+            <li class="mobile-nav__item current">
+              <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакти</a></li>
+          </ul>
+
+          <div class="mobile-contact">
+            <ul class="mobile-contact__list">
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__link-current link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contact-list__item">
+                <a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobail-social">
+            <ul class="mobail-social__list">
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Instagram</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Twitter</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Facebook</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="portfolio">
         <div class="container">
-          <h2 hidden>Портфолио</h2>
-          <ul class="list filters">
-            <li class="filters__item">
-              <button class="filters__option current-filter" type="button">Все</button>
+          <h2 class="visually-hidden">Портфоліо</h2>
+          <ul class="filter-list list">
+            <li class="filter-list__item">
+              <button class="filter-list__btn current-btn" type="button">Все</button>
             </li>
-            <li class="filters__item">
-              <button class="filters__option" type="button">Веб-сайты</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filters__item">
-              <button class="filters__option" type="button">Приложения</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Приложения</button>
             </li>
-            <li class="filters__item">
-              <button class="filters__option" type="button">Дизайн</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Дизайн</button>
             </li>
-            <li class="filters__item">
-              <button class="filters__option" type="button">Маркетинг</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list projects">
-            <li class="projects__item">
+           <ul class="project list">
+
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pnotebook.jpeg"
                     alt="Ноутбук с карточками персонала"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -106,13 +152,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pposter.jpeg"
                     alt="бой за баскетбольный мяч двух соверников"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -130,13 +176,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pseafood.jpeg"
                     alt="логотип ресторана на котором изображена рыба"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -151,13 +197,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pheadphones.jpeg"
                     alt="гарнитура"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -172,13 +218,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pboxes.jpeg"
                     alt="две коробки"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -193,13 +239,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pmonitor.jpeg"
                     alt="монитор"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -214,13 +260,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pbook.jpeg"
                     alt="открытая книга"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -235,13 +281,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/plabel.jpeg"
                     alt="етикетка с надписью"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -256,13 +302,13 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <img
                     src="./images/pnotebook2.jpeg"
                     alt="человек работает за ноутбуком"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="project__overlay-text">
@@ -277,120 +323,94 @@
                 </div>
               </a>
             </li>
+
           </ul>
+
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div class="footer-contacts">
-            <a class="link logo-link" href="./index.html"
-              ><span>Web</span><span class="logo">Studio</span></a
-            >
-            <address class="address">
-              <ul class="list footer-contact">
-                <li class="item">
-                  <a
-                    class="link"
-                    href="https://goo.gl/maps/ezr3iZgpbPec4GEx8"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><span class="text-white"
-                      >г. Киев, пр-т Леси Украинки, 26</span
-                    ></a
-                  >
-                </li>
-                <li class="item">
-                  <a
-                    class="link contact-item-text"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="item">
-                  <a class="link contact-item-text" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
+        <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
 
-          <div class="footer__social-wrapper">
-            <p class="footer__social-text">Присоединяйтесь</p>
-            <ul class="social-list footer__social">
-              <li class="social-list-item footer__social-item">
-                <a href="" class="social-list-link footer__social-link">
-                  <svg class="social-list-icon">
-                    <use
-                      href="./images/sprite.svg#instagram"
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item footer__social-item">
-                <a href="" class="social-list-link footer__social-link">
-                  <svg class="social-list-icon">
-                    <use
-                      href="./images/sprite.svg#twitter"
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item footer__social-item">
-                <a href="" class="social-list-link footer__social-link">
-                  <svg class="social-list-icon">
-                    <use
-                      href="./images/sprite.svg#facebook"
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item footer__social-item">
-                <a href="" class="social-list-link footer__social-link">
-                  <svg class="social-list-icon">
-                    <use
-                      href="./images/sprite.svg#linkedin"
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <form class="footer__form">
-            <p class="footer__social-text">Подпишитесь на рассылку</p>
-            <label class="footer__form-user-email">
-              <input
-                class="footer__form-input"
-                type="email"
-                name="email"
-                id="user_email"
-                placeholder="E-mail"
-              />
-              <button class="button" type="submit">
-                Подписаться
-                <svg class="social-list-icon">
-                  <use
-                    href="./images/sprite.svg#icon-input-mail"
-                    width="24"
-                    height="24"
-                  ></use>
+        <address class="address">
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a
+                class="link"
+                href="https://goo.gl/maps/ezr3iZgpbPec4GEx8"
+                target="_blank"
+                rel="noreferrer"
+                ><span class="address__text">г. Киев, пр-т Леси Украинки, 26</span></a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a class="link contact-list__item-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a class="link contact-list__item-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer__social-wrapper">
+          <p class="title">Приєднуйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
                 </svg>
-              </button>
-            </label>
-          </form>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <form class="footer__form">
+          <p class="title">Підписуйтесь на розсилку</p>
+          <label class="footer__form-user-email">
+            <input
+              class="footer__form-input"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button class="button" type="submit">
+              Підписатись
+              <svg class="social-list__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-input-mail"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
