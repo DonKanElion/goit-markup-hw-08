@@ -10,8 +10,6 @@
 
     opacity: 1;
     visibility: visible;
-    overflow: auto;
-
     transition: opacity 250ms var(--trans-prop), backround 250ms var(--trans-prop);
       &.is-hidden {
       visibility: hidden;
