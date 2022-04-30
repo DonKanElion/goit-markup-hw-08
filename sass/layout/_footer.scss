@@ -17,28 +17,18 @@
 }
 
 .address{
-    font-style: normal;
-
-    &__list{
-        margin-bottom: 60px;
-        }
-        
-    &__item{
+    margin-bottom: 60px;
+    
+    &__text{
+        color: var(--primery-white-color);
+    }
+    & > .contact-list > .contact-list__item{
         margin-bottom: 8px;
         &:last-child{
             margin-bottom: 0;
         }
-        }
-        
-    &__item-link{
-            color: rgba(255, 255, 255, 0.6);
-        }
-        
-    &__text{
-            color: var(--primery-white-color);
-        }
+    }  
 }
-
 
 .footer__social-wrapper{
     margin: 0 122px 60px;
@@ -58,7 +48,7 @@
       color: var(--primery-white-color);
     }
     &-input {
-      width: 450px;
+      width: 100%;
       height: 50px;
       padding-left: 16px;
       margin-bottom: 20px;

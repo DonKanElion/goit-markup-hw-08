@@ -1,9 +1,31 @@
-.container{
-    width: 480px;
+
+.container{    
+    
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 
     outline: 2px solid green;
+}
+
+// 480 px +
+@media screen and (min-width: 480px) {
+    .container{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    }
+
+// 768 px +
+@media screen and (min-width: 768px) {
+    .container{
+        width: 738px;
+    }
+    }
+
+// 1200 px +
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
 }
