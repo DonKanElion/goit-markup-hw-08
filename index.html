@@ -22,18 +22,70 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container">   
+    <header class="header">
+      <div class="container header__container">   
 
-       <div class="page-header__wrapper">
-        <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+        <nav class="main-nav">
+          <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+          
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="./index.html" class="main-nav__link link current">Студія</a></li>
+            <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link link">Портфоліо</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
+          </ul>
+        </nav>
 
-        <button type="button" class="button__menu">
-          <!-- <img src="./images/icon-menu-off.svg" alt="" width="40" height="40"> -->
-          <img src="./images/icon-menu-onn.svg" alt="" width="40" height="40">
-       </button>
-       </div>
-       
+         <!-- <div class="contact-header">
+          <ul class="contact-list">
+            <li class="contact-list__item"><a class="link contact-list__item-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a></li>
+            <li class="contact-list__item"><a class="link contact-list__item-link contact-list__current" href="tel:+380961111111"
+              >+38 096 111 11 11</a></li>
+          </ul>
+         </div> -->
+
+        <button type="button" class="mobile-menu-btn" data-menu-open >
+          <svg class="burger-menu-icon" width="40" height="40"> 
+            <use href="./images/sprite.svg#burger-menu-icon"></use>
+          </svg>
+       </button> 
+            
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+  
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item current"><a href="./index.html" class="mobile-nav__link link current">Студія</a></li>
+            <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a></li>
+            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакти</a></li>
+          </ul>
+  
+          <div class="mobile-contact">
+
+            <ul class="mobile-contact__list">
+              <li class="mobile-contact__item"><a class="mobile-contact__link-current link" href="tel:+380961111111"
+                >+38 096 111 11 11</a></li>
+                <li class="contact-list__item"><a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a></li>
+            </ul>
+           </div>
+
+           <div class="mobail-social">
+             <ul class="mobail-social__list">
+               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Instagram</a></li>
+               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Twitter</a></li>
+               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Facebook</a></li>
+               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">LinkedIn</a></li>
+             </ul>
+           </div>
+  
+        </div>
       </div>
     </header>
 
@@ -42,18 +94,18 @@
         <div class="container">
           <h1 class="hero__title">Ефективне рішення для вашого бізнеса</h1>
 
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" type="button"  data-modal-open>Замовити послугу</button>
 
 
-          <!-- MODAL START-->
+           <!-- MODAL START -->
 
-          <div class="backdrop iis-hidden">
+          <div class="backdrop is-hidden" data-modal>
             <div class="hero__modal">
               <form class="form">
                 <button 
                 class="button-close" 
                 type="button" 
-                data-modal-close>
+                data-modal-close >
                   <svg 
                   width="30" 
                   height="30">
@@ -130,11 +182,9 @@
             </div>
           </div>   
 
+          <!-- MODAL END -->
 
-          <!-- MODAL END --> 
-
-
-        </div>
+        </div> -->
       </section>
 
       <section class="action">
@@ -162,7 +212,7 @@
             <p class="action__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
           </ul>
         </div>
-      </section>
+      </section>  
 
       <section class="team">
         <div class="container">
@@ -356,6 +406,7 @@
           </ul>
         </div>
       </section>
+
     </main>
 
     <footer class="footer">
@@ -363,18 +414,19 @@
         <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
 
         <address class="address">
-          <ul class="address__list">
-            <li class="address__item"><a class="link" href="https://goo.gl/maps/ezr3iZgpbPec4GEx8"
+          <ul class="contact-list">
+            <li class="contact-list__item"><a class="link" href="https://goo.gl/maps/ezr3iZgpbPec4GEx8"
               target="_blank"
               rel="noreferrer"
               ><span class="address__text"
                 >г. Киев, пр-т Леси Украинки, 26</span
               ></a></li>
-            <li class="address__item"><a class="link address__item-link" href="mailto:info@devstudio.com"
+            <li class="contact-list__item"><a class="link contact-list__item-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a></li>
-            <li class="address__item"><a class="link address__item-link" href="tel:+380961111111"
+            <li class="contact-list__item"><a class="link contact-list__item-link" href="tel:+380961111111"
               >+38 096 111 11 11</a></li>
           </ul>
+        </address> 
 
           <div class="footer__social-wrapper">
             <p class="title">Приєднуйтесь</p>
@@ -432,12 +484,11 @@
               </button>
             </label>
           </form>
-
-          
-        </address>
+        
       </div>   
 
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,8 +1,11 @@
 @import './utils/variables';
 @import './base/common';
 @import './utils/visually-hidden';
+@import './utils/current';
 
 @import './layout/page-header';
+@import './components/main-nav';
+@import './components/contact-list';
 @import './base/container';
 @import './components/section-tiltle';
 @import './components/title';
