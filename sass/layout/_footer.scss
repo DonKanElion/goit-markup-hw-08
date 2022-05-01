@@ -72,3 +72,23 @@
       margin-left: 12px;
     }  
   }  
+
+  // 720px
+  @media screen and (min-width: 768px){
+      
+      .footer__flex{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+      }
+      .footer__social-wrapper{
+        margin-bottom: 0px;
+    }
+
+      .footer__address-wrapper{
+          margin-right: 165px;
+          margin-bottom: 60px;
+      }
+  }
+

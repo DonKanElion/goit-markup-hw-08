@@ -19,7 +19,8 @@
     }
     
     &__box{
-        padding: 30px 122px 24px 122px;
+        padding-top: 30px;
+        padding-bottom: 24px;
     }
 
     &__name{
@@ -36,5 +37,36 @@
     line-height: 1.187;
     text-align: center;
     margin-bottom: 16px;
+    }
+}
+
+// 720px
+@media screen and (min-width: 768px) {
+    .team{
+        
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &__item{
+            width: 354px;
+            height: 536px;
+
+            margin-right: var(--mr);
+            
+            flex-basis: calc((100% - 30px) / 2);
+
+            &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
+            &:nth-last-child(-n + 2){
+                margin-bottom: 0;
+            }
+        }
+        & img{
+            height: 354px;
+        }
+
     }
 }

@@ -13,3 +13,40 @@
         }
         
 }
+
+.contact-header{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-header{
+        display: contents;
+        
+        .contact-list{
+            margin-top: 0;
+        //     padding-top: 24px;
+        // padding-bottom: 24px;
+        }
+
+        & .contact-list__item-link{
+            display: block;
+            
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            color: var(--secondy-text-color);
+        }
+        
+        .contact-list__item:first-child{
+            margin-bottom: 10px;
+        }
+        &__icon {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+            fill: currentColor;
+          }
+    }
+    
+}

@@ -29,20 +29,24 @@
           <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
           
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="./index.html" class="main-nav__link link current">Студія</a></li>
+            <li class="main-nav__item"><a href="./index.html" class="main-nav__link link main-nav__link-current">Студія</a></li>
             <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link link">Портфоліо</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
           </ul>
         </nav>
 
-         <!-- <div class="contact-header">
+         <div class="contact-header">
           <ul class="contact-list">
             <li class="contact-list__item"><a class="link contact-list__item-link" href="mailto:info@devstudio.com"
+              ><svg class="contact-header__icon" width="16" height="12">
+                <use href="./images/sprite.svg#mail"></use></svg
               >info@devstudio.com</a></li>
             <li class="contact-list__item"><a class="link contact-list__item-link contact-list__current" href="tel:+380961111111"
+              ><svg class="contact-header__icon" width="10" height="16">
+                <use href="./images/sprite.svg#phone"></use></svg
               >+38 096 111 11 11</a></li>
           </ul>
-         </div> -->
+         </div>
 
         <button type="button" class="mobile-menu-btn" data-menu-open data-modal-open>
           <svg class="burger-menu-icon" width="40" height="40"> 
@@ -89,7 +93,7 @@
           </div>
         </div>
       </div>
-      
+
     </header>
 
     <main>
@@ -432,8 +436,10 @@
 
     <footer class="footer">
       <div class="container">   
-        <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
-
+        <div class="footer__flex">
+          <div class="footer__address-wrapper">
+            <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
+          
         <address class="address">
           <ul class="contact-list">
             <li class="contact-list__item"><a class="link" href="https://goo.gl/maps/ezr3iZgpbPec4GEx8"
@@ -448,6 +454,7 @@
               >+38 096 111 11 11</a></li>
           </ul>
         </address> 
+          </div>
 
           <div class="footer__social-wrapper">
             <p class="title">Приєднуйтесь</p>
@@ -481,8 +488,8 @@
                 </a>
               </li>
             </ul>
+
           </div>
-          
           <form class="footer__form">
             <p class="title">Підписуйтесь на розсилку</p>
             <label class="footer__form-user-email">
@@ -505,7 +512,9 @@
               </button>
             </label>
           </form>
-        
+          
+        </div> 
+
       </div>   
 
     </footer>
