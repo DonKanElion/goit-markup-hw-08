@@ -75,7 +75,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 0.1px solid green;
 }
 
 @media screen and (min-width: 480px) {

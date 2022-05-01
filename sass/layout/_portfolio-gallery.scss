@@ -52,93 +52,16 @@ padding-bottom: 60px;
     color: var(--primery-white-color);
 }
 
-// PROJECT <<<<<<
-
-.project{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--primery-white-color);
-
-    &__item{
-    width: 450px;
-    margin-bottom: var(--mb);
-        &:last-child{
-        margin-bottom: 0;
-        }
-    }
-
-    &__link{
-        display: block;
-        border: 1px solid transparent;
-        box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent,
-          1px 4px 6px transparent;
-      
-        transition: box-shadow 250ms var(--trans-prop), border 250ms var(--trans-prop);
-         &:hover,
-      &:focus {
-        border: 1px solid var(--primery-white-color);
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-          1px 4px 6px rgba(0, 0, 0, 0.16);
-      }
+// 720px +
+@media screen and (min-width: 768px){
+    .filter-list{
+        justify-content: center;
     }
 }
 
-.project__overlay{
-    position: relative;
-    overflow: hidden;
-    &-text{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-      
-        transform: translatey(100%);
-        transition: transform 250ms var(--trans-prop) ;
-      
-        padding: 62px 24px;
-        background-color: rgba(33, 150, 243, 0.9);
-      
-        color: var(--primery-white-color);
-      
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.55;
-    }
-    .project__link:hover &-text,
-    .project__link:focus &-text {
-      transform: translatex(0);
-    }
-}
-
-.project__footer{
-    padding: 20px 24px;
-
-    background: var(--primery-white-color);
-    border: 1px solid var(--bgc-grey);
-    border-top: 1px solid transparent;
-    
-   &-name{
-       margin-bottom: 4px;
-
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
-      letter-spacing: 0.06em;
-
-      color: var(--title-text-color);
-   } 
-   &-text{
-    font-size: 16px;
-    line-height: 1.87;
-
-    color: var(--secondy-text-color);
-
-    text-decoration-line: none;
-    text-decoration: none;
-    list-style: none;
-   }
-}
+// // 1200 px +
+// @media screen and (min-width: 1200px) {
+//     .container{
+//         width: 1170px;
+//     }
+// }
