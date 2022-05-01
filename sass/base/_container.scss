@@ -4,7 +4,7 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 0.1px solid green;
+    // outline: 0.1px solid green;
 }
 
 // 480 px +
@@ -17,15 +17,15 @@
     }
 
 // 768 px +
-@media screen and (min-width: 768px) {
-    .container{
-        width: 738px;
-    }
-    }
+// @media screen and (min-width: 768px) {
+//     .container{
+//         width: 738px;
+//     }
+//     }
 
-// 1200 px +
-@media screen and (min-width: 1200px) {
-    .container{
-        width: 1170px;
-    }
-}
+// // 1200 px +
+// @media screen and (min-width: 1200px) {
+//     .container{
+//         width: 1170px;
+//     }
+// }
