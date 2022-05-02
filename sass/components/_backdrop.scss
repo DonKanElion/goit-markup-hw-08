@@ -7,10 +7,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     
-
     opacity: 1;
     visibility: visible;
-    overflow: auto;
+    // overflow: auto;
 
     transition: opacity 250ms var(--trans-prop), backround 250ms var(--trans-prop);
       &.is-hidden {

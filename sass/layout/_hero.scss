@@ -13,7 +13,7 @@
     background-position: center;
     
     &__title{
-        margin-bottom: 30px;
+        margin-bottom: var(--mb);
         color: var(--primery-white-color);
         
         font-weight: 900;
@@ -24,3 +24,18 @@
         text-transform: uppercase;     
     }
 }
+
+// 1200 px +
+@media screen and (min-width: 1200px) {
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        &__title{
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+        }
+        
+        }  
+}
+

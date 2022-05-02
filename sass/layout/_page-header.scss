@@ -137,6 +137,7 @@
     
     &__list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: left;
         align-items: center;
         margin: 0;
@@ -178,5 +179,11 @@
     .mobile-menu, .mobile-menu-btn{
         display: none;
     }
-   
     }
+
+
+    // 1200 px +
+@media screen and (min-width: 1200px) {
+    
+    
+}

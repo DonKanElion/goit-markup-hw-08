@@ -24,8 +24,6 @@
         
         .contact-list{
             margin-top: 0;
-        //     padding-top: 24px;
-        // padding-bottom: 24px;
         }
 
         & .contact-list__item-link{
@@ -47,6 +45,23 @@
             margin-right: 10px;
             fill: currentColor;
           }
+    }
+    
+}
+
+// 1200 px +
+@media screen and (min-width: 1200px) {
+    .contact-header{
+        & .contact-list{
+            display: flex;
+            align-items: baseline;
+            &__item:first-child{
+                margin-right: 30px; 
+                margin-bottom: 0;
+            }
+  
+        }
+            
     }
     
 }

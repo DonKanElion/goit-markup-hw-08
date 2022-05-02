@@ -4,6 +4,7 @@
   --primery-white-color: #ffffff;
   --mr: 30px;
   --mb: 30px;
+  --card-set-grid: 30px;
   --padd-section: 60px 0;
   --accent-color: rgba(33, 150, 243, 1);
   --accent-color-focus: rgba(24, 140, 232, 1);
@@ -88,6 +89,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }
 
@@ -214,6 +221,7 @@ body {
 
 .mobail-social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   margin: 0;
@@ -307,7 +315,6 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  overflow: auto;
   transition: opacity 250ms var(--trans-prop), backround 250ms var(--trans-prop);
 }
 
@@ -356,6 +363,17 @@ body {
     height: auto;
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-header .contact-list {
+    display: flex;
+    align-items: baseline;
+  }
+  .contact-header .contact-list__item:first-child {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -657,18 +675,17 @@ body {
 
 .project {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  background-color: var(--primery-white-color);
+  margin-left: calc(-1 * var(--card-set-grid));
+  margin-bottom: calc(-1 * var(--card-set-grid));
 }
 
 .project__item {
-  margin-bottom: var(--mb);
-}
-
-.project__item:last-child {
-  margin-bottom: 0;
+  width: 404px;
+  height: 450px;
+  margin-left: var(--card-set-grid);
+  margin-bottom: var(--card-set-grid);
+  flex-basis: calc(100% / 1 - var(--card-set-grid));
 }
 
 .project__link {
@@ -712,6 +729,7 @@ body {
 
 .project__footer {
   padding: 20px 24px;
+  width: 100%;
   background: var(--primery-white-color);
   border: 1px solid var(--bgc-grey);
   border-top: 1px solid transparent;
@@ -736,25 +754,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .project {
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: -30px;
-    margin-right: -30px;
-  }
   .project__item {
-    margin-right: var(--mr);
-    flex-basis: calc((100% - 60px) / 2);
-  }
-  .project__item:nth-child(2n + 2) {
-    margin-right: 0;
-  }
-  .project__item:last-child {
-    margin-bottom: 0;
-  }
-  .project img {
     width: 354px;
-    height: 294px;
+    height: 404px;
+    flex-basis: calc(100% / 2 - var(--card-set-grid));
   }
 }
 
