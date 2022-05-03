@@ -5,8 +5,8 @@
     margin-bottom: calc(-1 * var(--card-set-grid));
 
     &__item{
-      width: 404px;
-      height: 450px;
+      display: flex;
+      // height: 450px;
 
       margin-left: var(--card-set-grid);
       margin-bottom: var(--card-set-grid);
@@ -15,11 +15,14 @@
     }
 
     &__link{
-        display: block;
+        display: flex;
+        flex-direction: column;
         
         border: 1px solid transparent;
         box-shadow: 0px 1px 1px transparent, 0px 4px 4px transparent,
           1px 4px 6px transparent;
+
+        text-decoration: none;
       
         transition: box-shadow 250ms var(--trans-prop), border 250ms var(--trans-prop);
          &:hover,
@@ -64,14 +67,16 @@
 }
 
 .project__footer{
+    flex-grow: 1;
+    overflow: hidden;
     padding: 20px 24px;
-    width: 100%;
 
-    background: var(--primery-white-color);
+    // background: var(--primery-white-color);
     border: 1px solid var(--bgc-grey);
     border-top: 1px solid transparent;
+
    &-name{
-       margin-bottom: 4px;
+      margin-bottom: 4px;
 
       font-weight: 700;
       font-size: 18px;
@@ -80,15 +85,12 @@
 
       color: var(--title-text-color);
    } 
+   
    &-text{
     font-size: 16px;
     line-height: 1.87;
 
     color: var(--secondy-text-color);
-
-    text-decoration-line: none;
-    text-decoration: none;
-    list-style: none;
    }
 }
 
@@ -97,7 +99,6 @@
     .project{
        
         &__item{
-           width: 354px;
           height: 404px;
           flex-basis: calc(100% / 2 - var(--card-set-grid));   
         }
@@ -109,20 +110,20 @@
     
 }
 
-// 1200 px +
-// @media screen and (min-width: 1200px) {
-//   .project{
+//1200 px +
+@media screen and (min-width: 1200px) {
+  .project{
        
-//     &__item{
-//       flex-basis: calc(100% / 3 - var(--card-set-grid));   
-//     }
+    &__item{
+      flex-basis: calc(100% / 3 - var(--card-set-grid));   
+    }
     
-//     .project__footer{
+    .project__footer{
     
-//     }
-//     & img{
-//         width: 354px;
-//         height: 294px;
-//    }
-// }
-// }
+    }
+    & img{
+        width: 370px;
+        height: 294px;
+    }
+} 
+}

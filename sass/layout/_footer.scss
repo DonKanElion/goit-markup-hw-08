@@ -3,6 +3,13 @@
     background-color: rgba(47, 48, 58, 1);
     
     text-align: center;
+
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
     &__logo{
         color: var(--primery-white-color);
         text-align: center;
@@ -17,7 +24,6 @@
 }
 
 .address{
-    margin-bottom: 60px;
     
     &__text{
         color: var(--primery-white-color);
@@ -36,7 +42,8 @@
 
 .footer__form {
     display: inline-block;
-    // position: relative;
+    position: relative;
+    
     &-user-email {
       display: flex;
       flex-wrap: wrap;
@@ -73,22 +80,60 @@
     }  
   }  
 
-  // 720px
-  @media screen and (min-width: 768px){
-      
-      .footer__flex{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          
-      }
-      .footer__social-wrapper{
+// 720px
+@media screen and (min-width: 768px){
+      .footer{
+    
+        &__social-wrapper{
         margin-bottom: 0px;
+        }
+
+        &__address-wrapper{
+            margin-right: 165px;
+        }
+        &__form{
+        margin-top: 60px;    
+        }
     }
+}
 
-      .footer__address-wrapper{
-          margin-right: 165px;
-          margin-bottom: 60px;
-      }
+  //1200 +
+  @media screen and (min-width:1170px){
+        .footer{
+            &__flex{
+                flex-wrap: nowrap;
+            }
+
+            &__address-wrapper{
+                margin-right: 70px;
+                margin-bottom: 0;
+                text-align: left;
+            }
+
+            &__social-wrapper{
+                margin-right: 93px;
+            }
+
+            &__form{
+                margin-top: 0px;    
+                }
+
+            & .title{
+                text-align: left;
+            }  
+
+            &__form-user-email{
+                flex-wrap: nowrap;
+            //   width: 100%;
+            }
+
+            &__form-input{
+                width: 358px;
+                margin-bottom: 0;
+                margin-right: 12px;
+            }
+
+        }
   }
-
+    
+    

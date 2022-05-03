@@ -47,14 +47,28 @@
     }
 }
 
-// 720px 
+// 768px 
 @media screen and (min-width: 768px) {
 
-    .clients{
-        
+    .clients{ 
+
         &__item{
             flex-basis: calc(100% / 3 - var(--card-set-grid));
         }
         
+    }
+}
+
+// 1200px +
+@media screen and (min-width:1170px){
+    .clients{
+
+        &__grid{
+            flex-wrap: nowrap;
+        }
+            
+        &__item{
+            flex-basis: calc(100% / 1 - var(--card-set-grid));
+        }
     }
 }

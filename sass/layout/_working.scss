@@ -1,0 +1,42 @@
+.working{
+    display: none;
+    padding: var(--padd-section);
+  }
+
+// 1200px +
+@media screen and (min-width: 1200px){
+    .working {
+        display: contents;
+        
+      
+        .working__list {
+        display: flex;
+        justify-content: center;
+        }
+        &__item {
+            width: 370px;
+        position: relative;
+        margin-right: var(--mr);
+        }
+        &__item:last-child {
+        margin-right: 0;
+        }
+        &__item > p {
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        height: 70px;
+        padding: 27px 0;
+
+        background-color: rgba(47, 48, 58, 0.8);
+        color: var(--primery-white-color);
+        font-weight: 700;
+        line-height: 1.14;
+    
+        text-transform: uppercase;
+        text-align: center;
+        }
+        
+    }
+}

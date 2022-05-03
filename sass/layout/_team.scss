@@ -3,20 +3,26 @@
     background-color: var(--bgc-grey);
 
     &__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
 
-    }
+        margin-right: calc(-1 * var(--card-set-grid));
+        margin-bottom: calc(-1 * var(--card-set-grid));
+        }
     
     &__item{
-        width: 100%;
-        margin-bottom: var(--mb);
-    
+        height: 450px;
+        margin-right: var(--card-set-grid);
+        margin-bottom: var(--card-set-grid);
+
+        flex-basis: calc(100% / 1 - var(--card-set-grid));        
+
         background-color: var(--primery-white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    &:last-child{
-        margin-bottom: 0;
+        border-radius: 0px 0px 4px 4px;
     }
-    }
+    
     
     &__box{
         padding-top: 30px;
@@ -40,32 +46,39 @@
     }
 }
 
-// 720px
+// 768px
 @media screen and (min-width: 768px) {
     .team{
-        
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
+
+        &__list{            
+            flex-direction: row;
         }
         
         &__item{
-            width: 354px;
-            height: 536px;
-
-            margin-right: var(--mr);
-            
-            flex-basis: calc((100% - 30px) / 2);
-
-            &:nth-child(2n + 2) {
-                margin-right: 0;
-            }
-            &:nth-last-child(-n + 2){
-                margin-bottom: 0;
-            }
+            height: 536px;  
+            flex-basis: calc(100% / 2 - var(--card-set-grid));
         }
         & img{
             height: 354px;
+        }
+
+    }
+}
+
+// 1200px
+@media screen and (min-width: 1170px) {
+    .team{
+
+        &__list{
+            flex-wrap: nowrap;
+        }
+
+        &__item{
+            height: 428px;  
+            flex-basis: calc(100% / 1 - var(--card-set-grid));
+        }
+        & img{
+            height: 260px;
         }
 
     }
