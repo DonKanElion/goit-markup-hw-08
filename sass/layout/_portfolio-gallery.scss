@@ -1,6 +1,6 @@
 .portfolio{
-padding-top: 60px;
-padding-bottom: 60px;
+padding-top: var(--padd-section);
+padding-bottom: var(--padd-section);
 }
 
 .filter-list{
@@ -10,9 +10,13 @@ padding-bottom: 60px;
     flex-wrap: wrap;
 
     margin-bottom: 40px;
+    
     &__item{
         margin-right: 8px;
         margin-bottom: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
     &__btn {
     display: flex;
@@ -56,6 +60,9 @@ padding-bottom: 60px;
 @media screen and (min-width: 768px){
     .filter-list{
         justify-content: center;
+        &__item{
+            margin-bottom: 0;
+        }
     }
 }
 

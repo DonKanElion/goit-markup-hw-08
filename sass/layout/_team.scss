@@ -1,5 +1,6 @@
 .team{
-    padding: var(--padd-section);   
+    padding-top: var(--padd-section);
+    padding-bottom: var(--padd-section);   
     background-color: var(--bgc-grey);
 
     &__list{
@@ -7,14 +8,14 @@
         flex-wrap: wrap;
         flex-direction: column;
 
-        margin-right: calc(-1 * var(--card-set-grid));
-        margin-bottom: calc(-1 * var(--card-set-grid));
+        margin-top: calc(-1 * var(--card-set-grid));
+        margin-left: calc(-1 * var(--card-set-grid));
         }
     
     &__item{
         height: 450px;
-        margin-right: var(--card-set-grid);
-        margin-bottom: var(--card-set-grid);
+        margin-top: var(--card-set-grid);
+        margin-left: var(--card-set-grid);
 
         flex-basis: calc(100% / 1 - var(--card-set-grid));        
 

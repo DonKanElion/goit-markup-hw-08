@@ -1,14 +1,13 @@
 .working{
     display: none;
-    padding: var(--padd-section);
+    padding-bottom: var(--padd-section);
   }
 
 // 1200px +
 @media screen and (min-width: 1200px){
     .working {
-        display: contents;
-        
-      
+        display: block;
+              
         .working__list {
         display: flex;
         justify-content: center;

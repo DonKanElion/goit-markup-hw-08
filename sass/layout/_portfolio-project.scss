@@ -1,15 +1,15 @@
 .project{
     display: flex;
     flex-wrap: wrap;
+    
+    margin-top: calc(-1 * var(--card-set-grid));
     margin-left: calc(-1 * var(--card-set-grid));
-    margin-bottom: calc(-1 * var(--card-set-grid));
 
     &__item{
       display: flex;
-      // height: 450px;
 
+      margin-top: var(--card-set-grid);
       margin-left: var(--card-set-grid);
-      margin-bottom: var(--card-set-grid);
 
       flex-basis: calc(100% / 1 - var(--card-set-grid));
     }
@@ -99,7 +99,7 @@
     .project{
        
         &__item{
-          height: 404px;
+          
           flex-basis: calc(100% / 2 - var(--card-set-grid));   
         }
         

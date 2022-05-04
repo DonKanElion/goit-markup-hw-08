@@ -1,17 +1,18 @@
 .clients{
-    padding: var(--padd-section);
+    padding-top: var(--padd-section);
+    padding-bottom: var(--padd-section);
 
     &__grid{
         display: flex;
         flex-wrap: wrap;
+        margin-top: calc(-1 * var(--card-set-grid));
         margin-left: calc(-1 * var(--card-set-grid));
-        margin-bottom: calc(-1 * var(--card-set-grid));
     }
     
     &__item{
         height: 92px;
+        margin-top: var(--card-set-grid);
         margin-left: var(--card-set-grid);
-        margin-bottom: var(--card-set-grid);
 
         flex-basis: calc(100% / 2 - var(--card-set-grid));
     
