@@ -23,37 +23,47 @@
 
   <body>
     <header class="header">
-      <div class="container header__container">   
-
+      <div class="container header__container">
         <nav class="main-nav">
           <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-          
+
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="./index.html" class="main-nav__link link">Студія</a></li>
-            <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link link main-nav__link-current">Портфоліо</a></li>
+            <li class="main-nav__item">
+              <a href="./index.html" class="main-nav__link link">Студія</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="./portfolio.html" class="main-nav__link link main-nav__link-current current"
+                >Портфоліо</a
+              >
+            </li>
             <li class="main-nav__item"><a href="#" class="main-nav__link link">Контакти</a></li>
           </ul>
         </nav>
 
-         <div class="contact-header">
+        <div class="contact-header">
           <ul class="contact-list">
-            <li class="contact-list__item"><a class="link contact-list__item-link" href="mailto:info@devstudio.com"
-              ><svg class="contact-header__icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use></svg
-              >info@devstudio.com</a></li>
-            <li class="contact-list__item"><a class="link contact-list__item-link contact-list__current" href="tel:+380961111111"
-              ><svg class="contact-header__icon" width="10" height="16">
-                <use href="./images/sprite.svg#phone"></use></svg
-              >+38 096 111 11 11</a></li>
+            <li class="contact-list__item">
+              <a class="link contact-list__item-link" href="mailto:info@devstudio.com"
+                ><svg class="contact-header__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#mail"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a class="link contact-list__item-link contact-list__current" href="tel:+380961111111"
+                ><svg class="contact-header__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#phone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-         </div>
+        </div>
 
-        <button type="button" class="mobile-menu-btn" data-menu-open >
-          <svg class="burger-menu-icon" width="40" height="40"> 
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="burger-menu-icon" width="40" height="40">
             <use href="./images/sprite.svg#burger-menu-icon"></use>
           </svg>
-       </button> 
-            
+        </button>
       </div>
 
       <div class="mobile-menu" data-menu>
@@ -63,35 +73,50 @@
               <use href="./images/sprite.svg#close"></use>
             </svg>
           </button>
-  
+
           <ul class="mobile-nav__list">
-            <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студія</a></li>
-            <li class="mobile-nav__item current"><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a></li>
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link link">Студія</a>
+            </li>
+            <li class="mobile-nav__item current">
+              <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+            </li>
             <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакти</a></li>
           </ul>
-  
+
           <div class="mobile-contact">
-
             <ul class="mobile-contact__list">
-              <li class="mobile-contact__item"><a class="mobile-contact__link-current link" href="tel:+380961111111"
-                >+38 096 111 11 11</a></li>
-                <li class="contact-list__item"><a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a></li>
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__link-current link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contact-list__item">
+                <a class="mobile-contact__link link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
             </ul>
-           </div>
+          </div>
 
-           <div class="mobail-social">
-             <ul class="mobail-social__list">
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Instagram</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Twitter</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">Facebook</a></li>
-               <li class="mobail-social__item"><a href="#" class="mobail-social__link link">LinkedIn</a></li>
-             </ul>
-           </div>
-  
+          <div class="mobail-social">
+            <ul class="mobail-social__list">
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Instagram</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Twitter</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">Facebook</a>
+              </li>
+              <li class="mobail-social__item">
+                <a href="#" class="mobail-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
     </header>
 
     <main>
@@ -117,37 +142,29 @@
           </ul>
 
           <ul class="project list">
-
             <li class="project__item">
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-
                     <picture>
-                      <source 
-                      srcset="./images/proj1-desk.jpg 1x, ./images/proj1-desk@2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="./images/proj1-desk.jpg 1x, ./images/proj1-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
                       />
-      
-                      <source 
-                      srcset="./images/proj1-tab.jpg 1x, ./images/proj1-tab@2x.jpg 2x" 
-                      media="(min-width: 768px)"
+
+                      <source
+                        srcset="./images/proj1-tab.jpg 1x, ./images/proj1-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
                       />
-      
-                      <source 
-                      srcset="./images/proj1-mob.jpg 1x, ./images/proj1-mob@2x.jpg 2x" 
-                      media="(max-width: 767px)"
+
+                      <source
+                        srcset="./images/proj1-mob.jpg 1x, ./images/proj1-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
                       />
-      
-                      <img 
-                      src="./images/proj1-mob.jpg"
-                      alt="Ноутбук с карточками персонала"
-                      
-                     >
-                      </img>
+
+                      <img src="./images/proj1-mob.jpg" alt="Ноутбук с карточками персонала" />
                     </picture>
-                
-                </div>
+                  </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -166,32 +183,27 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-
                     <picture>
-                      <source 
-                      srcset="./images/proj2-desk.jpg 1x, ./images/proj2-desk@2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="./images/proj2-desk.jpg 1x, ./images/proj2-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
                       />
-      
-                      <source 
-                      srcset="./images/proj2-tab.jpg 1x, ./images/proj2-tab@2x.jpg 2x" 
-                      media="(min-width: 768px)"
+
+                      <source
+                        srcset="./images/proj2-tab.jpg 1x, ./images/proj2-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
                       />
-      
-                      <source 
-                      srcset="./images/proj2-mob.jpg 1x, ./images/proj2-mob@2x.jpg 2x" 
-                      media="(max-width: 767px)"
+
+                      <source
+                        srcset="./images/proj2-mob.jpg 1x, ./images/proj2-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
                       />
-      
-                      <img 
-                      src="./images/proj2-mob.jpg"
-                      alt="бой за баскетбольный мяч двух соверников"
-                      
-                     >
-                      </img>
+
+                      <img
+                        src="./images/proj2-mob.jpg"
+                        alt="бой за баскетбольный мяч двух соверников"
+                      />
                     </picture>
-
-
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -212,29 +224,26 @@
                 <div class="project__overlay">
                   <div class="project__card-thumb">
                     <picture>
-                      <source 
-                      srcset="./images/proj3-desk.jpg 1x, ./images/proj3-desk@2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="./images/proj3-desk.jpg 1x, ./images/proj3-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
                       />
-      
-                      <source 
-                      srcset="./images/proj3-tab.jpg 1x, ./images/proj3-tab@2x.jpg 2x" 
-                      media="(min-width: 768px)"
-                      />
-      
-                      <source 
-                      srcset="./images/proj3-mob.jpg 1x, ./images/proj3-mob@2x.jpg 2x" 
-                      media="(max-width: 767px)"
-                      />
-      
-                      <img 
-                      src="./images/proj3-mob.jpg"
-                      alt="логотип ресторана на котором изображена рыба"
-                      
-                     >
-                      </img>
-                    </picture>
 
+                      <source
+                        srcset="./images/proj3-tab.jpg 1x, ./images/proj3-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj3-mob.jpg 1x, ./images/proj3-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img
+                        src="./images/proj3-mob.jpg"
+                        alt="логотип ресторана на котором изображена рыба"
+                      />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -254,7 +263,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img src="./images/pheadphones.jpeg" alt="гарнитура"/>
+                    <picture>
+                      <source
+                        srcset="./images/proj4-desk.jpg 1x, ./images/proj4-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj4-tab.jpg 1x, ./images/proj4-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj4-mob.jpg 1x, ./images/proj4-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj4-mob.jpg" alt="гарнитура" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -274,7 +300,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img src="./images/pboxes.jpeg" alt="две коробки"/>
+                    <picture>
+                      <source
+                        srcset="./images/proj5-desk.jpg 1x, ./images/proj5-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj5-tab.jpg 1x, ./images/proj5-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj5-mob.jpg 1x, ./images/proj5-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj5-mob.jpg" alt="две коробки" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -294,7 +337,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img src="./images/pmonitor.jpeg" alt="монитор"/>
+                    <picture>
+                      <source
+                        srcset="./images/proj6-desk.jpg 1x, ./images/proj6-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj6-tab.jpg 1x, ./images/proj6-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj6-mob.jpg 1x, ./images/proj6-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj6-mob.jpg" alt="монитор" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -313,7 +373,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img src="./images/pbook.jpeg" alt="открытая книга"/>
+                    <picture>
+                      <source
+                        srcset="./images/proj7-desk.jpg 1x, ./images/proj7-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj7-tab.jpg 1x, ./images/proj7-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj7-mob.jpg 1x, ./images/proj7-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj7-mob.jpg" alt="открытая книга" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -333,10 +410,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img
-                    src="./images/plabel.jpeg"
-                    alt="етикетка с надписью"
-                  />
+                    <picture>
+                      <source
+                        srcset="./images/proj8-desk.jpg 1x, ./images/proj8-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj8-tab.jpg 1x, ./images/proj8-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj8-mob.jpg 1x, ./images/proj8-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj8-mob.jpg" alt="етикетка с надписью" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -356,10 +447,24 @@
               <a class="project__link" href="">
                 <div class="project__overlay">
                   <div class="project__card-thumb">
-                    <img
-                    src="./images/pnotebook2.jpeg"
-                    alt="человек работает за ноутбуком"
-                  />
+                    <picture>
+                      <source
+                        srcset="./images/proj9-desk.jpg 1x, ./images/proj9-desk@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                      />
+
+                      <source
+                        srcset="./images/proj9-tab.jpg 1x, ./images/proj9-tab@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="./images/proj9-mob.jpg 1x, ./images/proj9-mob@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                      />
+
+                      <img src="./images/proj9-mob.jpg" alt="человек работает за ноутбуком" />
+                    </picture>
                   </div>
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
