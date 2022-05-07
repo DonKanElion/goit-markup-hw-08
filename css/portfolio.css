@@ -780,10 +780,6 @@ body {
   .project__item {
     flex-basis: calc(100% / 3 - var(--card-set-grid));
   }
-  .project img {
-    width: 370px;
-    height: 294px;
-  }
 }
 
 .footer {

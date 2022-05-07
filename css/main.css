@@ -416,8 +416,8 @@ body {
   padding-bottom: 118px;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero480.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -432,8 +432,27 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero480@2x.jpg'");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero720.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero720@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero1200.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -441,6 +460,12 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero1200@2x.jpg");
   }
 }
 
@@ -479,6 +504,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primery-white-color);
+}
+
+@media screen and (min-width: 1170px) {
+  .hero__modal {
+    width: 528px;
+  }
 }
 
 .form {
@@ -783,9 +814,6 @@ body {
     height: 536px;
     flex-basis: calc(100% / 2 - var(--card-set-grid));
   }
-  .team img {
-    height: 354px;
-  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -795,9 +823,6 @@ body {
   .team__item {
     height: 428px;
     flex-basis: calc(100% / 1 - var(--card-set-grid));
-  }
-  .team img {
-    height: 260px;
   }
 }
 

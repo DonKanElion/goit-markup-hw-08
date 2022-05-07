@@ -14,3 +14,11 @@
     border-radius: 4px;
     background-color: var(--primery-white-color);
 }
+
+// 1200px +
+@media screen and (min-width: 1170px) {
+    .hero__modal{
+      width: 528px;
+    }
+  
+}

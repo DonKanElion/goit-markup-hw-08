@@ -70,8 +70,7 @@
     flex-grow: 1;
     overflow: hidden;
     padding: 20px 24px;
-
-    // background: var(--primery-white-color);
+    
     border: 1px solid var(--bgc-grey);
     border-top: 1px solid transparent;
 
@@ -121,9 +120,6 @@
     .project__footer{
     
     }
-    & img{
-        width: 370px;
-        height: 294px;
-    }
+
 } 
 }
