@@ -75,27 +75,26 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -144,6 +143,10 @@ body {
 
 .mobile-menu__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
 }
@@ -175,7 +178,6 @@ body {
 
 .mobile-nav__list {
   margin-top: 0;
-  margin-bottom: 306px;
 }
 
 .mobile-nav__item {
@@ -221,7 +223,7 @@ body {
   color: var(--accent-color);
 }
 
-.mobail-social__list {
+.mobile-social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -229,24 +231,24 @@ body {
   margin: 0;
 }
 
-.mobail-social__item {
+.mobile-social-list__item {
   margin-left: 10px;
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mobail-social__item:first-child {
+.mobile-social-list__item:first-child {
   margin-left: 0;
 }
 
-.mobail-social__item:last-child {
+.mobile-social-list__item:last-child {
   margin-right: 0;
   padding-right: 0;
   border: none;
 }
 
-.mobail-social__link {
+.mobile-social-list__link {
   font-size: 18px;
   line-height: 1.22;
   color: var(--accent-color);
@@ -256,23 +258,21 @@ body {
   .mobile-menu, .mobile-menu-btn {
     display: none;
   }
-}
-
-.current {
-  position: relative;
-  color: var(--accent-color);
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  right: 100%;
-  transform: translate(100%);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+  .current {
+    position: relative;
+    color: var(--accent-color);
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transform: translate(100%);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
 }
 
 .main-nav {
@@ -668,6 +668,10 @@ body {
 
 .filter-list__item:last-child {
   margin-right: 0;
+}
+
+.filter-list__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .filter-list__btn {

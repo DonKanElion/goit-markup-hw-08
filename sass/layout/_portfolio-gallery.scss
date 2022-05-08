@@ -17,6 +17,9 @@ padding-bottom: var(--padd-section);
         &:last-child{
             margin-right: 0;
         }
+        &:nth-last-child(-n + 2){
+            margin-bottom: 0;
+        }
     }
     &__btn {
     display: flex;
@@ -65,10 +68,3 @@ padding-bottom: var(--padd-section);
         }
     }
 }
-
-// // 1200 px +
-// @media screen and (min-width: 1200px) {
-//     .container{
-//         width: 1170px;
-//     }
-// }

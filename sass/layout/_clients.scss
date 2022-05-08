@@ -10,14 +10,11 @@
     }
     
     &__item{
-        height: 92px;
         margin-top: var(--card-set-grid);
         margin-left: var(--card-set-grid);
+        
 
-        flex-basis: calc(100% / 2 - var(--card-set-grid));
-    
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
+        flex-basis: calc(100% / 2 - var(--card-set-grid)); 
 
         transition: border-color 250ms var(--trans-prop) 0ms;
         &:focus, &:hover{
@@ -30,21 +27,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
-        fill: var(--fill-icon);
+
         width: 100%;
         height: 100%;
+        padding: 25px 0;
+
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
     
+        fill: var(--fill-icon);
         transition: fill 250ms var(--trans-prop) 0ms;
     
         &:focus, &:hover{
             fill: var(--accent-color);
         }
-    }
-
-    &__icon{
-    width: 106px;
-    height: 60px;
     }
 }
 

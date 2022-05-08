@@ -13,7 +13,6 @@
         }
     
     &__item{
-        height: 450px;
         margin-top: var(--card-set-grid);
         margin-left: var(--card-set-grid);
 
@@ -55,8 +54,7 @@
             flex-direction: row;
         }
         
-        &__item{
-            height: 536px;  
+        &__item{ 
             flex-basis: calc(100% / 2 - var(--card-set-grid));
         }
     }
@@ -71,7 +69,6 @@
         }
 
         &__item{
-            height: 428px;  
             flex-basis: calc(100% / 1 - var(--card-set-grid));
         }
     }

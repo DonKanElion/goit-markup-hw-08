@@ -1,28 +1,28 @@
 
 .container{    
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 // 480 px +
 @media screen and (min-width: 480px) {
     .container{
-        width: 450px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 480px;
+        
     }
     }
 
 // 768 px +
 @media screen and (min-width: 768px) {
     .container{
-        width: 738px;
+        width: 768px;
     }
     }   
 
 // 1200 px +
 @media screen and (min-width: 1200px) {
     .container{
-        width: 1170px;
+        width: 1200px;
     }
 }
